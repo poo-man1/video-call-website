@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TalkTime - Secure 18+ Random Video Chat" />
+  <title>TalkTime - Video Chat 18+</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="age-check">
+    <h1>TalkTime</h1>
+    <p>18+ only. Are you 18 or older?</p>
+    <button onclick="enterSite()">Yes, Enter</button>
+  </div>
+
+  <div id="app" class="hidden">
+    <h2>TalkTime Video Chat</h2>
+    <div class="video-container">
+      <video id="localVideo" autoplay muted playsinline></video>
+      <video id="remoteVideo" autoplay playsinline></video>
+    </div>
+    <button id="skipBtn">Skip</button>
+    <div class="chat">
+      <div id="messages"></div>
+      <input type="text" id="chatInput" placeholder="Type message...">
+    </div>
+    <footer>
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="terms.html">Terms & Conditions</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
